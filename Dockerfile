@@ -29,4 +29,6 @@ RUN sudo apt-get update && \
         php7.3-ldap \
         php7.3-mysql \
         php7.3-redis \
-        php7.3-amqp
+        php7.3-amqp && \
+    sudo apt-get autoremove -y && \
+    sudo apt-get clean
