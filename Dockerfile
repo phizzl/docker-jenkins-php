@@ -30,4 +30,6 @@ RUN sudo apt-get update && \
         php7.3-redis \
         php7.3-amqp && \
     sudo apt-get autoremove -y && \
-    sudo apt-get clean
+    sudo apt-get clean && \
+    sudo mkdir -p /home/jenkins && \
+    chown -R jenkins:jenkins /home/jenkins
