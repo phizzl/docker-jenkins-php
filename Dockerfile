@@ -1,8 +1,6 @@
 FROM bitnami/jenkins:2
 LABEL maintainer "Phizzl <the@phizzl.de>"
 
-ADD ansible /ansible
-
 RUN sudo apt-get update && \
     sudo apt-get install -y apt-transport-https lsb-release ca-certificates software-properties-common wget && \
     sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
