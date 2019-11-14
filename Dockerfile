@@ -32,4 +32,4 @@ RUN sudo apt-get update && \
     sudo apt-get autoremove -y && \
     sudo apt-get clean && \
     sudo mkdir -p /home/jenkins && \
-    sudo chown -R jenkins:jenkins /home/jenkins
+    sudo chown -R 1001:1001 /home/jenkins
