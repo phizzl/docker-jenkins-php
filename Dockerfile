@@ -21,15 +21,18 @@ RUN sudo apt-get update && \
         php7.3-json \
         php7.3-mbstring \
         php7.3-pgsql \
+        php7.3-sqlite3 \
         php7.3-readline \
         php7.3-xml \
         php7.3-zip \
         php7.3-soap \
         php7.3-ldap \
         php7.3-mysql \
+        php7.3-mysqli \
         php7.3-redis \
         php7.3-amqp \
         php7.3-ssh2 \
+        php7.3-imagick \
         php7.2-cli \
         php7.2-opcache \
         php7.2-bcmath \
@@ -43,15 +46,18 @@ RUN sudo apt-get update && \
         php7.2-json \
         php7.2-mbstring \
         php7.2-pgsql \
+        php7.2-sqlite3 \
         php7.2-readline \
         php7.2-xml \
         php7.2-zip \
         php7.2-soap \
         php7.2-ldap \
         php7.2-mysql \
+        php7.2-mysqli \
         php7.2-redis \
         php7.2-amqp \
         php7.2-ssh2 \
+        php7.2-imagick \
         php7.1-cli \
         php7.1-opcache \
         php7.1-bcmath \
@@ -65,15 +71,18 @@ RUN sudo apt-get update && \
         php7.1-json \
         php7.1-mbstring \
         php7.1-pgsql \
+        php7.1-sqlite3 \
         php7.1-readline \
         php7.1-xml \
         php7.1-zip \
         php7.1-soap \
         php7.1-ldap \
         php7.1-mysql \
+        php7.1-mysqli \
         php7.1-redis \
         php7.1-amqp \
         php7.1-ssh2 \
+        php7.1-imagick \
         php7.0-cli \
         php7.0-opcache \
         php7.0-bcmath \
@@ -87,15 +96,18 @@ RUN sudo apt-get update && \
         php7.0-json \
         php7.0-mbstring \
         php7.0-pgsql \
+        php7.0-sqlite3 \
         php7.0-readline \
         php7.0-xml \
         php7.0-zip \
         php7.0-soap \
         php7.0-ldap \
         php7.0-mysql \
+        php7.0-mysqli \
         php7.0-redis \
         php7.0-amqp \
-        php7.0-ssh2 && \
+        php7.0-ssh2 \
+        php7.0-imagick && \
     sudo apt-get autoremove -y && \
     sudo apt-get clean && \
     sudo mkdir -p /home/jenkins && \
