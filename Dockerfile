@@ -28,8 +28,8 @@ RUN sudo apt-get update && \
         php7.3-ldap \
         php7.3-mysql \
         php7.3-redis \
-        php7.3-twig \
         php7.3-amqp \
+        php7.3-ssh2 \
         php7.2-cli \
         php7.2-opcache \
         php7.2-bcmath \
@@ -50,8 +50,8 @@ RUN sudo apt-get update && \
         php7.2-ldap \
         php7.2-mysql \
         php7.2-redis \
-        php7.2-twig \
         php7.2-amqp \
+        php7.2-ssh2 \
         php7.1-cli \
         php7.1-opcache \
         php7.1-bcmath \
@@ -73,6 +73,7 @@ RUN sudo apt-get update && \
         php7.1-mysql \
         php7.1-redis \
         php7.1-amqp \
+        php7.1-ssh2 \
         php7.0-cli \
         php7.0-opcache \
         php7.0-bcmath \
@@ -93,7 +94,8 @@ RUN sudo apt-get update && \
         php7.0-ldap \
         php7.0-mysql \
         php7.0-redis \
-        php7.0-amqp && \
+        php7.0-amqp \
+        php7.0-ssh2 && \
     sudo apt-get autoremove -y && \
     sudo apt-get clean && \
     sudo mkdir -p /home/jenkins && \
