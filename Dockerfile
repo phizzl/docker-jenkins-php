@@ -2,7 +2,18 @@ FROM bitnami/jenkins:2
 LABEL maintainer "Phizzl <the@phizzl.de>"
 
 RUN sudo apt-get update && \
-    sudo apt-get install -y rsync curl apt-transport-https lsb-release ca-certificates software-properties-common wget python-pip && \
+    sudo apt-get install -y
+        rsync \
+        zip \
+        unzip \
+        curl \
+        apt-transport-https \
+        lsb-release \
+        ca-certificates \
+        software-properties-common \
+        wget \
+        python-pip \
+        python3-pip && \
     sudo pip install paramiko ansible && \
     sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list && \
