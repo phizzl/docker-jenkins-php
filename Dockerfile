@@ -19,6 +19,32 @@ RUN sudo apt-get update && \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list && \
     sudo apt-get update && \
     sudo apt-get install -y \
+        php7.4-cli \
+        php7.4-opcache \
+        php7.4-bcmath \
+        php7.4-bz2 \
+        php7.4-cli \
+        php7.4-common \
+        php7.4-curl \
+        php7.4-gd \
+        php7.4-gmp \
+        php7.4-intl \
+        php7.4-json \
+        php7.4-mbstring \
+        php7.4-pgsql \
+        php7.4-sqlite3 \
+        php7.4-readline \
+        php7.4-xml \
+        php7.4-zip \
+        php7.4-soap \
+        php7.4-ldap \
+        php7.4-mysql \
+        php7.4-mysqli \
+        php7.4-redis \
+        php7.4-amqp \
+        php7.4-ssh2 \
+        php7.4-imagick \
+        php7.4-sodium \
         php7.3-cli \
         php7.3-opcache \
         php7.3-bcmath \
@@ -44,6 +70,7 @@ RUN sudo apt-get update && \
         php7.3-amqp \
         php7.3-ssh2 \
         php7.3-imagick \
+        php7.3-sodium \
         php7.2-cli \
         php7.2-opcache \
         php7.2-bcmath \
@@ -69,6 +96,7 @@ RUN sudo apt-get update && \
         php7.2-amqp \
         php7.2-ssh2 \
         php7.2-imagick \
+        php7.2-sodium \
         php7.1-cli \
         php7.1-opcache \
         php7.1-bcmath \
@@ -94,6 +122,7 @@ RUN sudo apt-get update && \
         php7.1-amqp \
         php7.1-ssh2 \
         php7.1-imagick \
+        php7.1-sodium \
         php7.0-cli \
         php7.0-opcache \
         php7.0-bcmath \
@@ -118,7 +147,8 @@ RUN sudo apt-get update && \
         php7.0-redis \
         php7.0-amqp \
         php7.0-ssh2 \
-        php7.0-imagick && \
+        php7.0-imagick
+        php7.0-sodium && \
     curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     sudo bash nodesource_setup.sh && \
     sudo apt-get install nodejs -y && \
