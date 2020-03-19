@@ -2,7 +2,7 @@ FROM bitnami/jenkins:2
 LABEL maintainer "Phizzl <the@phizzl.de>"
 
 RUN sudo apt-get update && \
-    sudo apt-get install -y
+    sudo apt-get install -y \
         rsync \
         zip \
         unzip \
