@@ -147,7 +147,7 @@ RUN sudo apt-get update && \
         php7.0-redis \
         php7.0-amqp \
         php7.0-ssh2 \
-        php7.0-imagick
+        php7.0-imagick \
         php7.0-sodium && \
     curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     sudo bash nodesource_setup.sh && \
