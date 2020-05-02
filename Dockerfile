@@ -19,31 +19,32 @@ RUN sudo apt-get update && \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list && \
     sudo apt-get update && \
     sudo apt-get install -y \
-        php7.4-cli \
-        php7.4-opcache \
-        php7.4-bcmath \
-        php7.4-bz2 \
-        php7.4-cli \
-        php7.4-common \
-        php7.4-curl \
-        php7.4-gd \
-        php7.4-gmp \
-        php7.4-intl \
-        php7.4-json \
-        php7.4-mbstring \
-        php7.4-pgsql \
-        php7.4-sqlite3 \
-        php7.4-readline \
-        php7.4-xml \
-        php7.4-zip \
-        php7.4-soap \
-        php7.4-ldap \
-        php7.4-mysql \
-        php7.4-mysqli \
-        php7.4-redis \
-        php7.4-amqp \
-        php7.4-ssh2 \
-        php7.4-imagick && \
+        php7.3-cli \
+        php7.3-opcache \
+        php7.3-bcmath \
+        php7.3-bz2 \
+        php7.3-cli \
+        php7.3-common \
+        php7.3-curl \
+        php7.3-gd \
+        php7.3-gmp \
+        php7.3-intl \
+        php7.3-json \
+        php7.3-mbstring \
+        php7.3-pgsql \
+        php7.3-sqlite3 \
+        php7.3-readline \
+        php7.3-xml \
+        php7.3-zip \
+        php7.3-soap \
+        php7.3-ldap \
+        php7.3-mysql \
+        php7.3-mysqli \
+        php7.3-redis \
+        php7.3-amqp \
+        php7.3-ssh2 \
+        php7.3-imagick \
+        php7.3-sodium && \
     curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     sudo bash nodesource_setup.sh && \
     sudo apt-get install nodejs -y && \
