@@ -19,32 +19,32 @@ RUN sudo apt-get update && \
     echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list && \
     sudo apt-get update && \
     sudo apt-get install -y \
-        php7.1-cli \
-        php7.1-opcache \
-        php7.1-bcmath \
-        php7.1-bz2 \
-        php7.1-cli \
-        php7.1-common \
-        php7.1-curl \
-        php7.1-gd \
-        php7.1-gmp \
-        php7.1-intl \
-        php7.1-json \
-        php7.1-mbstring \
-        php7.1-pgsql \
-        php7.1-sqlite3 \
-        php7.1-readline \
-        php7.1-xml \
-        php7.1-zip \
-        php7.1-soap \
-        php7.1-ldap \
-        php7.1-mysql \
-        php7.1-mysqli \
-        php7.1-redis \
-        php7.1-amqp \
-        php7.1-ssh2 \
-        php7.1-imagick \
-        php7.1-sodium && \
+        php7.0-cli \
+        php7.0-opcache \
+        php7.0-bcmath \
+        php7.0-bz2 \
+        php7.0-cli \
+        php7.0-common \
+        php7.0-curl \
+        php7.0-gd \
+        php7.0-gmp \
+        php7.0-intl \
+        php7.0-json \
+        php7.0-mbstring \
+        php7.0-pgsql \
+        php7.0-sqlite3 \
+        php7.0-readline \
+        php7.0-xml \
+        php7.0-zip \
+        php7.0-soap \
+        php7.0-ldap \
+        php7.0-mysql \
+        php7.0-mysqli \
+        php7.0-redis \
+        php7.0-amqp \
+        php7.0-ssh2 \
+        php7.0-imagick \
+        php7.0-sodium && \
     curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && \
     sudo bash nodesource_setup.sh && \
     sudo apt-get install nodejs -y && \
